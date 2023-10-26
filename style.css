@@ -1,0 +1,54 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    /* Setzt den äußeren Rand des Body-Elements auf 0 */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    /* Setzt den äußeren Rand der Tabelle auf 0 */
+    width: 300px;
+    /* (50px Zellenbreite + 1px Zellenrand) * 3 Zellen + 2 * 5px (für die Border) */
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 0px solid #000;
+    /* Schwarze Border-Farbe für Zellen */
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Nur innere Trennlinien in der Tabelle, nicht außen */
+
+td:not(:first-child) {
+    border-left: 5px solid white;
+    /* Linke Trennlinie */
+}
+
+tr:not(:first-child) td {
+    border-top: 5px solid white;
+    /* Obere Trennlinie */
+}
